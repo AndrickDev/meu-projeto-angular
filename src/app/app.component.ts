@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { CardListComponent } from './card-list.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [CardListComponent],
+  template: `<app-card-list></app-card-list>`
 })
-export class AppComponent {
-  title = 'meu-projeto';
-}
+export class AppComponent {}
